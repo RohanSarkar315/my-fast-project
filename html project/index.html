@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{  
+            width: 100%;
+            height: 50px;
+            float: left;
+            box-sizing:border-box;
+            padding: 6px;
+        }
+        body{
+            padding: 0;
+            margin: 0;
+          
+
+        }
+        #brand{
+            padding: 0;
+            margin: 0;
+            float: left;
+            margin-left: 24px;
+
+        }
+        #tag_line{
+            float: right;
+            padding: 0;
+            margin: 0;
+            margin-top: 10px;
+            margin-right: 24px;
+        }
+        nav{
+            width: 100%;
+            height: 106px;
+            background-color: blue;
+            box-sizing:border-box;
+            float: left;
+            padding: 30px;
+        }
+        #search{
+            width: 400px;
+            height: 40px;
+            float: left;
+            box-sizing:border-box;
+            font-size: 15px;
+            padding: 10px;
+        }
+        #search-btn{
+            width: 100px;
+            height: 40px;
+            float: left;
+            box-sizing:border-box;
+            border: none;
+            margin-left: 3px;
+            font-size: 15px ;
+        }
+        #menu_table{
+            width: 600px;
+            height: 40px;
+            float:right;
+            box-sizing: border-box;
+        }
+        #menu_item{
+            background-color: white;
+            width: 20%;
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        section{
+            width: 100%;
+            height: 1650px;
+            float: left;
+            box-sizing: border-box;
+            border-width: 1px;
+            border-style: solid;
+            border-color: rgb(0, 102, 255);
+            padding: 30px;
+            ;
+        }
+        #venue{
+            float: left;
+        }
+        #phone{
+            float:right;
+        }
+        #popular-sweets-box{
+            width: 720px;
+            height: 550px;
+            float: left;
+            box-sizing: border-box;
+            background-color: black;
+            margin: 30px;
+            padding: 25px;
+        }
+        #popular-sweets-title{
+            color: white;
+            text-align: center;
+            font-size: 30px;
+            margin: 0;
+            padding: 0;
+
+        }
+        #popular-sweets-img{
+            width: 300px;
+            height: 200px;
+            margin: 15px;
+            box-sizing: border-box;
+            border-width: 5px;
+            border-color: antiquewhite;
+            border-style: solid;
+        }
+        #rate_list_box{
+            width: 350px;
+            height: 550px;
+            float: right;
+            box-sizing: border-box;
+            margin-top: 30px;
+           
+        }
+        #rate_header{
+            height: 50px;
+            background-color: rgb(94, 57, 179);
+            color: white;
+            text-align: center;
+            font-size: 25px;
+
+        }
+        #rate_content{
+            background-color: rgb(123, 117, 51);
+        }
+        #s_name{
+            color: white;
+            font-size: 22px;
+            padding: 15px;
+            border-bottom-width: 2px;
+            border-bottom-style: solid;
+            border-bottom-color: wheat;
+
+        }
+        #reat{
+            list-style: none;
+        }
+        fieldset{
+            width: 690px;
+            height: 550px;
+            float: left;
+            border-width: 1px;
+            border-color: brown;
+            border-style: solid;
+            padding: 10px;
+        }
+        legend{
+            font-size: 30px;
+            font-weight: bold;
+        }
+        #order_online{
+            font-size: 17px;
+
+        }
+        #order_input{
+            width: 100%;
+            height: 33px;
+            box-sizing: border-box;
+            border-width: 1px;
+            border-style: solid;
+            border-color: rgb(60, 133, 197);
+            margin-top: 5px;
+
+
+        }
+        textarea{
+            width: 100%;
+            height: 100px;
+            box-sizing: border-box;
+            border-width: 1px;
+            border-style: solid;
+            border-color: rgb(60, 133, 197);
+            
+
+        }
+        #submit_btn{
+            padding: 10px;
+            font-size: 15px;
+            float: right;
+            border-width: 1px;
+            border-style: solid;
+            border-color: rgb(242, 176, 8);
+            background-color: rgb(198, 137, 62);
+        }
+        #abt_us{
+            width: 400px;
+            height: 550px;
+            float: right;
+             border-style: solid;
+            border-color: rgb(242, 176, 8);
+            box-sizing: border-box;
+            margin-top: 20px;
+            padding: 10px;
+        }
+        #abt_title{
+            font-size: 30px;
+            text-align: center;
+        }
+        #abt-text{
+            text-align: justify;
+            line-height: 50px;
+        }
+        #m_sweets{
+            width: 100%;
+            float: left;
+            box-sizing: border-box;
+        }
+        #more_sweets{
+            text-align: center;
+            font-size: 30px;
+
+        }
+        #sweets{
+            width: 220px;
+            height: 250px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: rgb(13, 78, 78);
+            float: left;
+            margin-right: 9px;
+            box-sizing: border-box;
+        }
+        #sweets_end{
+            width: 220px;
+            height: 250px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: rgb(13, 78, 78);
+            float: left;
+            box-sizing: border-box;
+        }
+        #sweets_pic{
+            width: 218px;
+            height: 200px;
+            
+        }
+        #buy_btn{
+            margin-top: 10px;
+        }
+        footer{
+            width: 100%;
+            height: 250px;
+            box-sizing: border-box;
+            float: left;
+            background-color: rgb(37, 11, 11);
+        }
+        #contact_us{
+            width: 400px;
+            height: 250px;
+            box-sizing: border-box;
+            float: left;
+            border-width: 1px;
+            border-style: solid;
+            border-color: white;
+            padding: 20px;
+            padding-left: 20px;
+            
+        }
+        #social_link{
+            width: 400px;
+            height: 250px;
+            box-sizing: border-box;
+            float: right;
+            border-width: 1px;
+            border-style: solid;
+            border-color: white;
+        }
+        #contact_title{
+            color: white;
+        }
+        #contact_details{
+            color: white;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+<h1 id="brand">
+    Sweetshop.com
+</h1>
+<p id="tag_line">The worlds largest & bakeries shop</p>
+    </header>
+    <nav>
+<form>
+    <input type="search" name="search" placeholder="search your sweets here" id="search">
+    <input type="submit" id="search-btn" value="search" >
+</form>
+
+<table id="menu_table">
+
+    <tr>
+        <td id="menu_item"><a href="index.html">home</a></td>
+        <td id="menu_item"><a href="sweets.html">sweets</a></td>
+        <td id="menu_item"><a href="#">bakeries</a></td>
+        <td id="menu_item"><a href="#">About us</a></td>
+        <td id="menu_item"><a href="#">contact us</a></td>
+    </tr>
+    
+</table>
+    </nav>
+    <section>
+
+        <address id="venue">
+            rajmahal,jharkhand sahebganj-816198
+        </address>
+        <address id="phone">
+            order online +19 8809989218 , 9546208874
+        </address>
+
+         <div id="popular-sweets-box">
+            <h1 id="popular-sweets-title">your popular sweets</h1>
+            <img src="ims/a.avif" id="popular-sweets-img">
+            <img src="ims/b.avif" id="popular-sweets-img">
+            <img src="ims/c.webp" id="popular-sweets-img">
+            <img src="ims/d.png" id="popular-sweets-img">
+         </div>
+
+         <table id="rate_list_box" border="1">
+
+            <tr>
+                <td id="rate_header">sweets name</td>
+                <td id="rate_header">name</td>
+            </tr>
+            <tr>
+                <td id="rate_content">
+                    <ol>
+                        <li id="s_name">rosagula</li>
+                        <li id="s_name">ladu</li>
+                        <li id="s_name">cham cham</li>
+                        <li id="s_name">kala jamun</li>
+                        <li id="s_name"> jilebi</li>
+                        <li id="s_name">raskadam</li>
+                        <li id="s_name">kadam</li>
+                    </ol>
+                </td>
+                <td id="rate_content">
+
+                    <ol id="reat">
+                        <li id="s_name">200</li>
+                        <li id="s_name">799</li>
+                        <li id="s_name">699</li>
+                        <li id="s_name">744</li>
+                        <li id="s_name">200</li>
+                        <li id="s_name">100</li>
+                        <li id="s_name">710</li>
+                    </ol>
+
+                </td>
+            </tr>
+
+         </table>
+         <fieldset id="frm_box">
+<legend>order online</legend>
+<form id="order_online">
+    buyer name<br>
+    <input type="text" name="name" id="order_input"><br><br>
+    mobile no.<br>
+    <input type="number" name="mobile number" id="order_input"><br><br>
+    choose sweets<br><br>
+    <select name="choose_sweets">
+        <option value="rosagula">rosagula</option>
+        <option value="rosagula">rosagula</option>
+        <option value="rosagula">rosagula</option>
+        <option value="rosagula">rosagula</option>
+        <option value="rosagula">rosagula</option>
+        <option value="rosagula">rosagula</option>
+        <option value="rosagula">rosagula</option>
+        <option value="rosagula">rosagula</option>
+        <option value="rosagula">rosagula</option>
+        <br><br>
+        quantity<br>
+        <input type="text" name="quantity" id="order_input">
+        <br><br>
+        Address<br>
+        <textarea name="address"></textarea><br><br>
+        <input type="submit" name="order now" id="submit_btn">
+
+</form>
+         </fieldset>
+
+         <div id="abt_us">
+
+            <h1 align="center" id="abt_title">About us</h1>
+            <hr>
+            <p id="abt-text">hsfgok oirstgniuorh loirhgkjlhgodi irklrheopi kj kduh kjdf ;dfjh dbjkhdf kjhkjldsh kdfjh vhfg vfbhdg jdsfhj vhdfsv jhdg f jkfdjvbfkudghfkj hbkd jfjh kdjfh kjdbfghfvb dfkjvhbjvbkdjfh kdbvjdjvbhkjfn </p>
+
+         </div>
+         <div id="m_sweets">
+            <h1 id="more_sweets">More sweets</h1>
+         </div>
+         <div id="sweets">
+            <img src="ims/a.avif" id="sweets_pic">
+            <center>
+                <a href="#frm_box">
+            <button id="buy_btn">buy now</button>
+                </a>
+            </center>
+         </div>
+         <div id="sweets">
+            <img src="ims/b.avif" id="sweets_pic">
+             <center>
+                <a href="#frm_box">
+            <button id="buy_btn">buy now</button>
+                </a>
+            </center>
+         </div>
+         <div id="sweets">
+            <img src="ims/c.webp" id="sweets_pic">
+             <center>
+                <a href="#frm_box">
+            <button id="buy_btn">buy now</button>
+                </a>
+            </center>
+         </div>
+         <div id="sweets">
+            <img src="ims/d.png" id="sweets_pic">
+             <center>
+                <a href="#frm_box">
+            <button id="buy_btn">buy now</button>
+                </a>
+            </center>
+         </div>
+         <div id="sweets_end">
+            <img src="ims/e.png" id="sweets_pic">
+             <center>
+                <a href="#frm_box">
+            <button id="buy_btn">buy now</button>
+                </a>
+            </center>
+         </div>
+
+    </section>
+    <footer>
+
+<div id="contact_us">
+    <h1 id="contact_title">contact us</h1>
+    <address id="contact_details">website : Sweetshop.com</address>
+    <address id="contact_details">phone number : 8809989218</address>
+    <address id="contact_details">address : rajmahal sahebganj-816198</address>
+</div>
+<div id="social_link"></div>
+         
+    </footer>
+</body>
+</html>
